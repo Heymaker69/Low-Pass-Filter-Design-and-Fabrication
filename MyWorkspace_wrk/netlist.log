@@ -1,0 +1,26 @@
+; Top Design: "MyLibrary_lib:cell_1:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="MyLibrary_lib:cell_1:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+#uselib "ckt" , "SnP"
+SnP:SnP1  N__3 NumPorts=1 File="C:\Users\alenezi3\Desktop\Project 2\Diode_SParam_Oneport.s1p" Type="touchstone" InterpMode="linear" InterpDom="" ExtrapMode="constant" Temp=27.0 CheckPassivity=0 
+Port:Term1  N__5 0 Num=1 Z=50 Ohm Noise=yes 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=0.05 GHz Stop=1.8 GHz Step=0.001 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+C:C1  0 N__4 C=9 pF tune{ 4.34 pF to 13.02 pF by 0.5 pF } 
+L:L1  N__6 N__2 L=53 nH tune{ 19.185 nH to 57.555 nH by 1 nH } Noise=yes  
+model MSub1 MSUB H=0.25 mm Er=3.55 Mur=1 Cond=1.0E+50 Hu=1e+33 mm T=1.524 mm TanD=0.003 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+MTEE_ADS:Tee1  N__5 N__6 N__4 Subst="MSub1" W1=0.625 mm W2=0.625 mm W3=1.25 mm 
+MLIN2:TL1  N__2 N__3 Subst="MSub1" W=0.625 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 

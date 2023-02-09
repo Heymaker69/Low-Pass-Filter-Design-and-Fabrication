@@ -1,0 +1,49 @@
+Log file name: writeiff.log
+IFF translation 
+
+Output format: Intermediate File Format
+Output filename: C:\Users\alenezi3\Desktop\New Project 2\Final_Design_After_Revision.iff
+Design name: MyLibrary_lib:cell_1:schematic
+
+Reading options file .\iff.opt 
+
+Export Options: 
+   HierarchyOption: 2 (All Levels - parts from Selected Libraries)
+   The following libraries will be included in the export:
+       MyLibrary_lib
+   DefaultLibraryPath: ads_rflib
+   The IFF file will be overwritten.
+   Export IFF Version 2 
+
+Exporting design MyLibrary_lib:cell_1:schematic
+  Reading element Term Term1
+  Reading element S_Param SP1
+  Reading element MLIN TL17
+  Reading element MLIN TL18
+  Reading element MSUB MSub1
+  Reading element MLIN TL1
+  Reading element MTEE_ADS Tee1
+  Reading element MLIN TL2
+  Reading element MLIN TL3
+  Reading element MLIN TL4
+  Reading element MLIN TL5
+  Reading element MLIN TL6
+  Reading element MTEE_ADS Tee2
+  Reading element MLIN TL7
+  Reading element MLIN TL8
+  Reading element MLIN TL15
+  Reading element MLOC TL9
+  Reading element MLIN TL16
+  Reading element MLIN TL14
+  Reading element MLIN TL10
+  Reading element MLIN TL11
+  Reading element MLIN TL12
+  Reading element MLIN TL13
+  Reading element MTEE_ADS Tee3
+  Reading element VIA V2
+  Reading element VIA V3
+  Reading element VIA V4
+  Reading element MLIN TL19
+Finished exporting design MyLibrary_lib:cell_1:schematic
+ 
+IFF file C:\Users\alenezi3\Desktop\New Project 2\Final_Design_After_Revision.iff created.

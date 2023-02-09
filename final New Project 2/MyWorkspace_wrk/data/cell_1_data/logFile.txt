@@ -1,0 +1,12 @@
+
+hpeesofsim (*) 531.update1.0 Oct 31 2020, MINT version 5
+    (64-bit windows built: Sat Oct 31, 2020 17:36:43 +0000)
+
+
+SP SP1[1] <MyLibrary_lib:cell_1:schematic>   freq=(600 MHz->1.4 GHz)
+
+
+Resource usage:
+  Heap Count = 161 Kitems  Size = 44 MB  Overhead = 2 MB   Total = 47 MB
+  Total stopwatch time     =     0.90 seconds.
+

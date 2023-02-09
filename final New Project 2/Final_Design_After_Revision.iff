@@ -1,0 +1,136 @@
+FRAMEWORKÿ2ÿ
+ICONÿ/ÿfileÿsymbolsÿ/symbols:fileÿ0ÿ0ÿÿ
+ICONÿ/symbols:fileÿdesignÿcell_1ÿ/symbols:file/cell_1:designÿ0ÿ0ÿÿ
+CIRCUITPAGEÿ/symbols:file/cell_1:designÿ125ÿ25ÿ12.5ÿONÿin/100ÿHPEESOF_DESIGN_CODE=1ÿADS_DESIGN_PROPERTY_TUNE_DDS=cell_1.ddsÿ
+CONÿ5ÿ20ÿ1ÿOTHER FONTÿ-400ÿ-412.5ÿGROUNDÿ-387.5ÿ-412.5ÿ-400ÿ-412.5ÿFÿTÿNÿCON_ID=G1ÿ
+CONENDÿ
+CONÿ5ÿ20ÿ1ÿOTHER FONTÿ-112.5ÿ-512.5ÿGROUNDÿ-100ÿ-512.5ÿ-112.5ÿ-512.5ÿFÿTÿNÿCON_ID=G2ÿ
+CONENDÿ
+CONÿ5ÿ20ÿ1ÿOTHER FONTÿ1512.5ÿ162.5ÿGROUNDÿ1525ÿ162.5ÿ1512.5ÿ162.5ÿFÿTÿNÿCON_ID=G5ÿ
+CONENDÿ
+CONÿ5ÿ20ÿ1ÿOTHER FONTÿ450ÿ-525ÿGROUNDÿ462.5ÿ-525ÿ450ÿ-525ÿFÿTÿNÿCON_ID=G4ÿ
+CONENDÿ
+CMPÿ/ads_simulation:file/Term:designÿ0ÿ3ÿ-375ÿ25ÿ0ÿTerm1ÿNÿNÿOFFÿNum=1 ÿZ=50 ohÿNoise=YesÿVdc=ÿTemp=ÿ
+CMPÿ/ads_simulation:file/S_Param:designÿ0ÿ0ÿ-662.5ÿ425ÿ0ÿSP1ÿNÿNÿOFFÿSweepVar="freq"ÿUseSweepPlan=ÿSweepPlan=ÿStart=0.6 ghzÿStop=1.4 ghzÿStep=0.0001 ghzÿCenter=ÿSpan=ÿLin=ÿDec=ÿLog=ÿReverse=ÿPt=ÿSort=LINEAR START STEPÿOutputPlan=list()ÿUseEquationNestLevel=OutputPlan_BooleanYesÿEquationNestLevel=2 ÿEquationName=list()ÿCalcS=yesÿCalcY=noÿCalcZ=noÿCalcGroupDelay=ÿGroupDelayAperture=0.0001 ÿFreqConversion=NoÿFreqConversionPort=1 ÿUseFiniteDiff=ÿStatusLevel=2 ÿCalcNoise=NoÿSortNoise=NoiseSortOffÿNoiseThresh=ÿBandwidthForNoise=1 hzÿFreq=ÿDevOpPtLevel=DeviceOpNoneÿNoiseInputPort=ÿNoiseOutputPort=ÿOther=ÿUseSavedEquationNestLevel=OutputPlan_BooleanYesÿSavedEquationNestLevel=2 ÿSavedEquationName=list()ÿAttachedEquationName=list()ÿEnforcePassivity=ÿ
+CMPÿ/ads_tlines:file/MLIN:designÿ0ÿ0ÿ700ÿ537.5ÿ0ÿTL17ÿNÿNÿOFFÿSubst="MSub1"ÿW=0.625 mmÿL=0.8 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+CMPÿ/ads_tlines:file/MLIN:designÿ0ÿ0ÿ112.5ÿ587.5ÿ0ÿTL18ÿNÿNÿOFFÿSubst="MSub1"ÿW=0.625 mmÿL=0.8 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+CMPÿ/ads_tlines:file/MSUB:designÿ0ÿ0ÿ-600ÿ200ÿ0ÿMSub1ÿNÿNÿOFFÿH=1.524 mmÿEr=3.55 ÿMur=1 ÿCond=1e+50 ÿHu=3.93701e+34 milÿT=17 umÿTanD=0.003 ÿRough=0 mmÿCond1="cond:drawing"ÿCond2="cond2:drawing"ÿDiel1="cond:drawing"ÿDiel2="cond:drawing"ÿHole="cond:drawing"ÿRes="cond:drawing"ÿBond="cond:drawing"ÿDielectricLossModel=DielectricLossModelDjordjevicFormÿFreqForEpsrTanD=1 ghzÿLowFreqForTanD=1 khzÿHighFreqForTanD=1 thzÿBbase=ÿDpeaks=ÿL2Rough=ÿL2Bbase=ÿL2Dpeaks=ÿL3Rough=ÿL3Bbase=ÿL3Dpeaks=ÿRoughnessModel=RoughnessModelMultilevelFormÿ
+CMPÿ/ads_tlines:file/MLIN:designÿ0ÿ0ÿ262.5ÿ425ÿ0ÿTL1ÿNÿNÿOFFÿSubst="MSub1"ÿW=1.2 mmÿL=2.5 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+CMPÿ/ads_tlines:file/MTEE_ADS:designÿ0ÿ0ÿ-162.5ÿ425ÿ0ÿTee1ÿNÿNÿOFFÿSubst="MSub1"ÿW1=1.2 mmÿW2=1.2 mmÿW3=1.2 mmÿTemp=ÿ
+CMPÿ/ads_tlines:file/MLIN:designÿ0ÿ0ÿ1237.5ÿ425ÿ0ÿTL2ÿNÿNÿOFFÿSubst="MSub1"ÿW=1.2 mmÿL=2.5 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+CMPÿ/ads_tlines:file/MLIN:designÿ0ÿ0ÿ-12.5ÿ425ÿ0ÿTL3ÿNÿNÿOFFÿSubst="MSub1"ÿW=1.2 mmÿL=2.5 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+CMPÿ/ads_tlines:file/MLIN:designÿ0ÿ1ÿ-112.5ÿ-200ÿ0ÿTL4ÿNÿNÿOFFÿSubst="MSub1"ÿW=1.2 mmÿL=2.5 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+CMPÿ/ads_tlines:file/MLIN:designÿ0ÿ0ÿ-325ÿ425ÿ0ÿTL5ÿNÿNÿOFFÿSubst="MSub1"ÿW=3.625 mmÿL=6 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+CMPÿ/ads_tlines:file/MLIN:designÿ0ÿ1ÿ-112.5ÿ100ÿ0ÿTL6ÿNÿNÿOFFÿSubst="MSub1"ÿW=1.2 mmÿL=2.5 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+CMPÿ/ads_tlines:file/MTEE_ADS:designÿ0ÿ0ÿ987.5ÿ425ÿ0ÿTee2ÿNÿNÿOFFÿSubst="MSub1"ÿW1=1.2 mmÿW2=1.2 mmÿW3=1.2 mmÿTemp=ÿ
+CMPÿ/ads_tlines:file/MLIN:designÿ0ÿ1ÿ1000ÿ87.5ÿ0ÿTL7ÿNÿNÿOFFÿSubst="MSub1"ÿW=1.2 mmÿL=20 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+CMPÿ/ads_tlines:file/MLIN:designÿ0ÿ1ÿ1000ÿ-100ÿ0ÿTL8ÿNÿNÿOFFÿSubst="MSub1"ÿW=1.2 mmÿL=2.5 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+CMPÿ/ads_tlines:file/MLIN:designÿ0ÿ0ÿ525ÿ37.5ÿ0ÿTL15ÿNÿNÿOFFÿSubst="MSub1"ÿW=0.8 mmÿL=0.8 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+CMPÿ/ads_tlines:file/MLOC:designÿ0ÿ3ÿ1006.875ÿ-294.375ÿ0ÿTL9ÿNÿNÿOFFÿSubst="MSub1"ÿW=3 mmÿL=3 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+CMPÿ/ads_tlines:file/MLIN:designÿ0ÿ0ÿ1087.5ÿ-187.5ÿ0ÿTL16ÿNÿNÿOFFÿSubst="MSub1"ÿW=0.625 mmÿL=0.8 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+CMPÿ/ads_tlines:file/MLIN:designÿ0ÿ0ÿ25ÿ25ÿ0ÿTL14ÿNÿNÿOFFÿSubst="MSub1"ÿW=0.625 mmÿL=0.8 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+CMPÿ/ads_tlines:file/MLIN:designÿ0ÿ1ÿ475ÿ-200ÿ0ÿTL10ÿNÿNÿOFFÿSubst="MSub1"ÿW=1.2 mmÿL=2.5 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+CMPÿ/ads_tlines:file/MLIN:designÿ0ÿ1ÿ475ÿ100ÿ0ÿTL11ÿNÿNÿOFFÿSubst="MSub1"ÿW=1.2 mmÿL=2.5 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+CMPÿ/ads_tlines:file/MLIN:designÿ0ÿ0ÿ575ÿ425ÿ0ÿTL12ÿNÿNÿOFFÿSubst="MSub1"ÿW=1.2 mmÿL=2.5 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+CMPÿ/ads_tlines:file/MLIN:designÿ0ÿ0ÿ850ÿ425ÿ0ÿTL13ÿNÿNÿOFFÿSubst="MSub1"ÿW=1.2 mmÿL=2.5 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+CMPÿ/ads_tlines:file/MTEE_ADS:designÿ0ÿ0ÿ425ÿ425ÿ0ÿTee3ÿNÿNÿOFFÿSubst="MSub1"ÿW1=1.2 mmÿW2=1.2 mmÿW3=1.2 mmÿTemp=ÿ
+CMPÿ/ads_tlines:file/VIA:designÿ0ÿ1ÿ-112.5ÿ-450ÿ0ÿV2ÿNÿNÿOFFÿD1=1.2 mmÿD2=0.25 mmÿH=1.524 mmÿT=17 umÿW=0.625 mmÿCond1Layer="cond:drawing"ÿHoleLayer="cond:drawing"ÿCond2Layer="cond2:drawing"ÿ
+CMPÿ/ads_tlines:file/VIA:designÿ0ÿ1ÿ462.5ÿ-475ÿ0ÿV3ÿNÿNÿOFFÿD1=1.2 mmÿD2=0.25 mmÿH=1.524 mmÿT=17 umÿW=0.625 mmÿCond1Layer="cond:drawing"ÿHoleLayer="cond:drawing"ÿCond2Layer="cond2:drawing"ÿ
+CMPÿ/ads_tlines:file/VIA:designÿ0ÿ1ÿ1512.5ÿ212.5ÿ0ÿV4ÿNÿNÿOFFÿD1=1.2 mmÿD2=0.25 mmÿH=1.524 mmÿT=17 umÿW=0.625 mmÿCond1Layer="cond:drawing"ÿHoleLayer="cond:drawing"ÿCond2Layer="cond2:drawing"ÿ
+CMPÿ/ads_tlines:file/MLIN:designÿ0ÿ0ÿ1137.5ÿ575ÿ0ÿTL19ÿNÿNÿOFFÿSubst="MSub1"ÿW=1 mmÿL=1 mmÿWall1=2.5e+28 mmÿWall2=2.5e+28 mmÿTemp=ÿMod=Kirschningÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿgnd!ÿ
+WIRESEGÿWIRESÿ-400ÿ-412.5ÿ-400ÿ-162.5ÿ
+WIRESEGÿWIRESÿ-400ÿ-162.5ÿ-375ÿ-162.5ÿ
+WIRESEGÿWIRESÿ-375ÿ-162.5ÿ-375ÿ-75ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__21ÿ
+WIRESEGÿWIRESÿ-112.5ÿ-325ÿ-112.5ÿ-200ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿgnd!ÿ
+WIRESEGÿWIRESÿ-112.5ÿ-450ÿ-112.5ÿ-512.5ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__11ÿ
+WIRESEGÿWIRESÿ112.5ÿ587.5ÿ112.5ÿ425ÿ
+WIRESEGÿWIRESÿ112.5ÿ425ÿ87.5ÿ425ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__25ÿ
+WIRESEGÿWIRESÿ475ÿ100ÿ475ÿ37.5ÿ
+WIRESEGÿWIRESÿ475ÿ37.5ÿ525ÿ37.5ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__27ÿ
+WIRESEGÿWIRESÿ1000ÿ-100ÿ1000ÿ-135ÿ
+WIRESEGÿWIRESÿ1000ÿ-135ÿ1002.5ÿ-135ÿ
+WIRESEGÿWIRESÿ1002.5ÿ-135ÿ1002.5ÿ-137.5ÿ
+WIRESEGÿWIRESÿ1002.5ÿ-137.5ÿ1050ÿ-137.5ÿ
+WIRESEGÿWIRESÿ1050ÿ-137.5ÿ1050ÿ-187.5ÿ
+WIRESEGÿWIRESÿ1050ÿ-187.5ÿ1087.5ÿ-187.5ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__29ÿ
+WIRESEGÿWIRESÿ700ÿ537.5ÿ700ÿ425ÿ
+WIRESEGÿWIRESÿ700ÿ425ÿ675ÿ425ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__18ÿ
+WIRESEGÿWIRESÿ950ÿ425ÿ987.5ÿ425ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__14ÿ
+WIRESEGÿWIRESÿ362.5ÿ425ÿ425ÿ425ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__19ÿ
+WIRESEGÿWIRESÿ-225ÿ425ÿ-162.5ÿ425ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__23ÿ
+WIRESEGÿWIRESÿ475ÿ200ÿ475ÿ375ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__22ÿ
+WIRESEGÿWIRESÿ525ÿ425ÿ575ÿ425ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__30ÿ
+WIRESEGÿWIRESÿ800ÿ537.5ÿ800ÿ425ÿ
+WIRESEGÿWIRESÿ800ÿ425ÿ850ÿ425ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__26ÿ
+WIRESEGÿWIRESÿ475ÿ-100ÿ475ÿ-62.5ÿ
+WIRESEGÿWIRESÿ475ÿ-62.5ÿ625ÿ-62.5ÿ
+WIRESEGÿWIRESÿ625ÿ-62.5ÿ625ÿ37.5ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__4ÿ
+WIRESEGÿWIRESÿ475ÿ-200ÿ475ÿ-275ÿ
+WIRESEGÿWIRESÿ475ÿ-275ÿ462.5ÿ-275ÿ
+WIRESEGÿWIRESÿ462.5ÿ-275ÿ462.5ÿ-350ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__28ÿ
+WIRESEGÿWIRESÿ1006.875ÿ-294.375ÿ1012.5ÿ-294.375ÿ
+WIRESEGÿWIRESÿ1012.5ÿ-294.375ÿ1012.5ÿ-275ÿ
+WIRESEGÿWIRESÿ1012.5ÿ-275ÿ1000ÿ-275ÿ
+WIRESEGÿWIRESÿ1000ÿ-275ÿ1000ÿ-235ÿ
+WIRESEGÿWIRESÿ1000ÿ-235ÿ1002.5ÿ-235ÿ
+WIRESEGÿWIRESÿ1002.5ÿ-235ÿ1002.5ÿ-237.5ÿ
+WIRESEGÿWIRESÿ1002.5ÿ-237.5ÿ1187.5ÿ-237.5ÿ
+WIRESEGÿWIRESÿ1187.5ÿ-237.5ÿ1187.5ÿ-187.5ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__15ÿ
+WIRESEGÿWIRESÿ1000ÿ87.5ÿ1000ÿ0ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__3ÿ
+WIRESEGÿWIRESÿ1037.5ÿ375ÿ1000ÿ375ÿ
+WIRESEGÿWIRESÿ1000ÿ375ÿ1000ÿ187.5ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__1ÿ
+WIRESEGÿWIRESÿ262.5ÿ425ÿ212.5ÿ425ÿ
+WIRESEGÿWIRESÿ212.5ÿ425ÿ212.5ÿ587.5ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿgnd!ÿ
+WIRESEGÿWIRESÿ1512.5ÿ212.5ÿ1512.5ÿ162.5ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__20ÿ
+WIRESEGÿWIRESÿ-112.5ÿ100ÿ-112.5ÿ25ÿ
+WIRESEGÿWIRESÿ-112.5ÿ25ÿ25ÿ25ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__9ÿ
+WIRESEGÿWIRESÿ-112.5ÿ200ÿ-112.5ÿ375ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__8ÿ
+WIRESEGÿWIRESÿ-62.5ÿ425ÿ-12.5ÿ425ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__5ÿ
+WIRESEGÿWIRESÿ-325ÿ425ÿ-375ÿ425ÿ
+WIRESEGÿWIRESÿ-375ÿ425ÿ-375ÿ25ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__16ÿ
+WIRESEGÿWIRESÿ1137.5ÿ425ÿ1087.5ÿ425ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿgnd!ÿ
+WIRESEGÿWIRESÿ462.5ÿ-475ÿ462.5ÿ-500ÿ
+WIRESEGÿWIRESÿ462.5ÿ-500ÿ450ÿ-500ÿ
+WIRESEGÿWIRESÿ450ÿ-500ÿ450ÿ-525ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__12ÿ
+WIRESEGÿWIRESÿ-112.5ÿ-100ÿ125ÿ-100ÿ
+WIRESEGÿWIRESÿ125ÿ-100ÿ125ÿ25ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__34ÿ
+WIRESEGÿWIRESÿ1512.5ÿ337.5ÿ1512.5ÿ425ÿ
+WIRESEGÿWIRESÿ1512.5ÿ425ÿ1337.5ÿ425ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__16ÿ
+WIRESEGÿWIRESÿ1137.5ÿ425ÿ1137.5ÿ575ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__16ÿ
+WIRESEGÿWIRESÿ1150ÿ425ÿ1137.5ÿ425ÿ
+WIREÿ0ÿSQUARE,ON,BUSONÿN__31ÿ
+WIRESEGÿWIRESÿ1237.5ÿ425ÿ1225ÿ425ÿ
+WIRESEGÿWIRESÿ1225ÿ425ÿ1225ÿ437.5ÿ
+WIRESEGÿWIRESÿ1225ÿ437.5ÿ1237.5ÿ437.5ÿ
+WIRESEGÿWIRESÿ1237.5ÿ437.5ÿ1237.5ÿ575ÿ
+ENDPAGEÿ

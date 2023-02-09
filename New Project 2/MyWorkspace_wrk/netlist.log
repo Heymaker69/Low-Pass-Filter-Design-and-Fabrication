@@ -1,0 +1,31 @@
+; Top Design: "MyLibrary_lib:cell_1:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="MyLibrary_lib:cell_1:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+#uselib "ckt" , "SnP"
+SnP:SnP1  N__3 N__7 NumPorts=2 File="C:\Users\alenezi3\Desktop\Project 2\Diode_SParam_Twoport.s2p" Type="touchstone" InterpMode="linear" InterpDom="" ExtrapMode="constant" Temp=27.0 CheckPassivity=0 
+Port:Term1  N__5 0 Num=1 Z=50 Ohm Noise=yes 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=0.05 GHz Stop=1.8 GHz Step=0.001 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+C:C1  N__10 N__4 C=9.8 pF tune{ 4.7115 pF to 14.1345 pF by 0.9423 pF } 
+L:L1  N__13 N__2 L=33.528 nH tune{ 20.955 nH to 62.865 nH by 4.191 nH } Noise=yes  
+model MSub1 MSUB H=1.524 mm Er=3.55 Mur=1 Cond=1.0E+50 Hu=1e+33 mm T=1.524 mm TanD=0.003 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+MLIN2:TL1  N__2 N__3 Subst="MSub1" W=1.2 mm L=1.6 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MTEE_ADS:Tee1  N__12 N__8 N__9 Subst="MSub1" W1=1.2 mm W2=1.2 mm W3=1.2 mm 
+MLIN2:TL2  N__7 0 Subst="MSub1" W=1.2 mm L=1.6 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL3  N__8 N__13 Subst="MSub1" W=1.2 mm L=1.6 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL4  0 N__10 Subst="MSub1" W=1.2 mm L=1.6 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL5  N__5 N__12 Subst="MSub1" W=3.625 mm L=6 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL6  N__4 N__9 Subst="MSub1" W=1.2 mm L=1.6 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 

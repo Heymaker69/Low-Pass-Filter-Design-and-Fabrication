@@ -1,0 +1,43 @@
+; Top Design: "MyLibrary_lib:cell_1:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="MyLibrary_lib:cell_1:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+#uselib "ckt" , "SnP"
+SnP:SnP1  N__6 N__7 NumPorts=2 File="C:\Users\alenezi3\Desktop\New Project 2\Diode_SParam_Twoport.s2p" Type="touchstone" InterpMode="linear" InterpDom="" ExtrapMode="constant" Temp=27.0 CheckPassivity=0 
+Port:Term1  N__5 0 Num=1 Z=50 Ohm Noise=yes 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=0.6 GHz Stop=1.4 GHz Step=0.0001 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+model MSub1 MSUB H=1.524 mm Er=3.55 Mur=1 Cond=1.0E+50 Hu=3.93701e+34 mil T=17 um TanD=0.003 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+MLIN2:TL1  N__1 N__14 Subst="MSub1" W=1.2 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MTEE_ADS:Tee1  N__19 N__8 N__9 Subst="MSub1" W1=1.2 mm W2=1.2 mm W3=1.2 mm 
+MLIN2:TL2  N__7 0 Subst="MSub1" W=1.2 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL3  N__8 N__11 Subst="MSub1" W=1.2 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL4  0 N__12 Subst="MSub1" W=1.2 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL5  N__5 N__19 Subst="MSub1" W=3.625 mm L=6 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL6  N__20 N__9 Subst="MSub1" W=1.2 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MTEE_ADS:Tee2  N__18 N__6 N__3 Subst="MSub1" W1=1.2 mm W2=1.2 mm W3=1.2 mm 
+MLIN2:TL7  N__15 N__3 Subst="MSub1" W=1.2 mm L=20 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL8  N__27 N__15 Subst="MSub1" W=1.2 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLOC2:TL9  N__28 Subst="MSub1" W=3 mm L=3 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL10  0 N__26 Subst="MSub1" W=1.2 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL11  N__25 N__23 Subst="MSub1" W=1.2 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL12  N__22 N__29 Subst="MSub1" W=1.2 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL13  N__30 N__18 Subst="MSub1" W=1.2 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MTEE_ADS:Tee3  N__14 N__22 N__23 Subst="MSub1" W1=1.2 mm W2=1.2 mm W3=1.2 mm 
+MLIN2:TL14  N__20 N__12 Subst="MSub1" W=0.625 mm L=0.8 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL15  N__25 N__26 Subst="MSub1" W=0.8 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL16  N__27 N__28 Subst="MSub1" W=0.625 mm L=0.8 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL17  N__29 N__30 Subst="MSub1" W=0.625 mm L=0.8 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL18  N__11 N__1 Subst="MSub1" W=0.625 mm L=0.8 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
